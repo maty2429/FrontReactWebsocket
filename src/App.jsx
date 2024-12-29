@@ -9,7 +9,7 @@ function App() {
     const [tickets, setTickets] = useState([]);
 
     useEffect(() => {
-        webSocketService.connect('ws://192.168.1.2:8080/ws');
+        webSocketService.connect('ws://192.168.1.15:8080/ws');
 
         const handleMessage = (message) => {
             if (message.error) {
